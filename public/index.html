@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatbot Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">
+        <h1>Chatbot Demo</h1>
+      </div>
+      <ul class="chat-log" id="chat-log">
+        <li class="chat-bubble bot-message"> Select 1 to Place an order </li>
+        <li class="chat-bubble bot-message"> Select 99 to checkout order </li>
+        <li class="chat-bubble bot-message"> Select 98 to see order history </li>
+        <li class="chat-bubble bot-message"> Select 97 to see current order </li>
+        <li class="chat-bubble bot-message"> Select 0 to cancel order </li>
+      </ul>
+      <form class="chat-form" id="chat-form">
+        <input type="text" class="chat-input" id="chat-input" placeholder="Type your message...">
+        <button type="submit" class="chat-button">Send</button>
+      </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script/main.js"></script>
+  </body>
+</html>
+
