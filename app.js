@@ -92,6 +92,7 @@ io.on("connection", (socket) => {
       //   return socket.disconnect();
       // }
       let orderHistory = req.session.orderHistory;
+      orderHistory;
       let menuChoice = req.session.menuChoice;
       if (userMessage === "1") {
         botResponse = `Please select an option from the menu:\n `;
