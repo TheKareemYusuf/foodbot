@@ -17,6 +17,7 @@
   .chat-header {
     text-align: center;
     margin-bottom: 20px;
+    position: sticky;
   }
   
   .chat-log {
