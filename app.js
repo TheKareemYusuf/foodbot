@@ -106,7 +106,7 @@ io.on("connection", (socket) => {
         if (selectedOption) {
           req.session.menuChoice = selectedOption;
           req.session.save(() => {
-            req.session.menuChoice;
+            menuChoice;
           });
           botResponse = `You selected ${selectedOption.name} for N${selectedOption.price}. Please type 99 to checkout your order.`;
         } else {
