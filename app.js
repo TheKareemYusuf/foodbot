@@ -87,10 +87,10 @@ io.on("connection", (socket) => {
     console.log("message: " + userMessage);
     req.session.reload((err) => {
       let botResponse;
-      if (err) {
-        // session has expired
-        return socket.disconnect();
-      }
+      // if (err) {
+      //   // session has expired
+      //   return socket.disconnect();
+      // }
       let orderHistory = req.session.orderHistory;
       let menuChoice = req.session.menuChoice;
       if (userMessage === "1") {
